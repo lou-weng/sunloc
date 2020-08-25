@@ -1,0 +1,8 @@
+#logo {
+    font-family: 'Playfair Display' !important;
+    color:white !important;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: bolder !important;
+}

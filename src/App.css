@@ -15,6 +15,10 @@
 
 .App-header {
   background-color: #282c34;
+  background-image: url("sunset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +39,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bodyText {
+  color: white !important;
+  position: absolute;
+  left: 350px;
+  top: 190px;
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.selectionButton {
+  position: absolute;
+  top: 250px;
+  font-family: 'Roboto Slab', serif !important;
+}
+
+#sunriseButton {
+  left: 350px;
+  background: rgba(255, 254, 254, 0.2);
+  border-color: white;
+}
+
+#sunriseButton:hover {
+  left: 350px;
+  background: rgba(255, 254, 254, 0.3);
+  border-color: white;
+}
+
+#sunsetButton {
+  left: 480px;
+  background: rgba(255, 254, 254, 0.2);
+  border-color: white;
+}
+
+#sunsetButton:hover {
+  left: 480px;
+  background: rgba(255, 254, 254, 0.3);
+  border-color: white;
+}
+
+#locationText {
+  top: 330px;
+}
+
+.textInput {
+  position: absolute;
+  border: 0;
+  outline: 0;
+  background: blue !important;
+  border-bottom: 2px solid white;
+  width: 400px;
+  font-family: 'Roboto Slab', serif !important;
+  color: red !important;
+  left: 350px;
+  top: 390px;
 }
