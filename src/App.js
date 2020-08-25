@@ -17,8 +17,9 @@ function App() {
 				<Button className="selectionButton" id="sunsetButton">sunset</Button>
 				<p className="bodyText" id="locationText">where are you located?</p>
 				<Form className="textInput">
-					<Form.Control placeholder="enter address" />
+					<Form.Control className="formField" placeholder="enter address" />
 				</Form>
+				<Button className="selectionButton" id="searchButton">show me the light</Button>
 			</header>
 		</div>
 	);

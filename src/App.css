@@ -45,13 +45,13 @@
   color: white !important;
   position: absolute;
   left: 350px;
-  top: 190px;
+  top: 200px;
   font-family: 'Roboto Slab', serif !important;
 }
 
 .selectionButton {
   position: absolute;
-  top: 250px;
+  top: 260px;
   font-family: 'Roboto Slab', serif !important;
 }
 
@@ -62,9 +62,7 @@
 }
 
 #sunriseButton:hover {
-  left: 350px;
   background: rgba(255, 254, 254, 0.3);
-  border-color: white;
 }
 
 #sunsetButton {
@@ -74,24 +72,45 @@
 }
 
 #sunsetButton:hover {
-  left: 480px;
   background: rgba(255, 254, 254, 0.3);
-  border-color: white;
 }
 
 #locationText {
-  top: 330px;
+  top: 340px;
 }
 
 .textInput {
   position: absolute;
-  border: 0;
-  outline: 0;
-  background: blue !important;
-  border-bottom: 2px solid white;
-  width: 400px;
+  width: 500px;
   font-family: 'Roboto Slab', serif !important;
-  color: red !important;
   left: 350px;
-  top: 390px;
+  top: 400px;
+}
+
+.formField {
+  color: white !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-bottom: 2px solid white !important;
+  background: transparent !important;
+}
+
+.formField::selection, .formField:hover {
+  outline: none !important;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 0.5 !important;
+}
+
+#searchButton {
+  left: 510px;
+  top: 480px;
+  background: rgba(255, 254, 254, 0.2);
+  border-color: white;
+}
+
+#searchButton:hover {
+  background: rgba(255, 254, 254, 0.3);
 }
