@@ -1,0 +1,56 @@
+.bodyText {
+    color: white !important;
+    font-family: 'Roboto Slab', serif !important;
+  }
+  
+  .selectionButton {
+    font-family: 'Roboto Slab', serif !important;
+  }
+  
+  #sunriseButton {
+    background: rgba(139, 114, 114, 0.2);
+    border-color: white;
+  }
+  
+  #sunriseButton:hover {
+    background: rgba(255, 254, 254, 0.3);
+  }
+  
+  #sunsetButton {
+    background: rgba(255, 254, 254, 0.2);
+    border-color: white;
+  }
+  
+  #sunsetButton:hover {
+    background: rgba(255, 254, 254, 0.3);
+  }
+  
+  .textInput {
+    font-family: 'Roboto Slab', serif !important;
+  }
+  
+  .formField {
+    color: white !important;
+    border: 0 !important;
+    outline: 0 !important;
+    border-bottom: 2px solid white !important;
+    background: transparent !important;
+  }
+  
+  .formField::selection, .formField:hover {
+    outline: none !important;
+  }
+  
+  ::placeholder {
+    color: white !important;
+    opacity: 0.5 !important;
+  }
+  
+  #searchButton {
+    background: rgba(255, 254, 254, 0.2);
+    border-color: white;
+  }
+  
+  #searchButton:hover {
+    background: rgba(255, 254, 254, 0.3);
+  }

@@ -1,0 +1,26 @@
+.cardStyling {
+    background: rgba(255, 254, 254, 0.2) !important;
+}
+
+.bodyTextCard {
+    font-family: 'Roboto Slab', serif !important;
+    font-size: small !important;
+    text-align: left;
+}
+
+.cardFooter {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold;
+    font-size: small !important;
+}
+
+.cardTitle {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+.cardImage {
+    max-width:100%;
+    height:auto;
+}

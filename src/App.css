@@ -15,15 +15,15 @@
 
 .App-header {
   background-color: #282c34;
-  background-image: url("sunset.jpg");
+  background-image: url("images/sunset.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -41,76 +41,9 @@
   }
 }
 
-.bodyText {
-  color: white !important;
-  position: absolute;
-  left: 350px;
-  top: 200px;
+.navigationLink {
   font-family: 'Roboto Slab', serif !important;
-}
-
-.selectionButton {
-  position: absolute;
-  top: 260px;
-  font-family: 'Roboto Slab', serif !important;
-}
-
-#sunriseButton {
-  left: 350px;
-  background: rgba(255, 254, 254, 0.2);
-  border-color: white;
-}
-
-#sunriseButton:hover {
-  background: rgba(255, 254, 254, 0.3);
-}
-
-#sunsetButton {
-  left: 480px;
-  background: rgba(255, 254, 254, 0.2);
-  border-color: white;
-}
-
-#sunsetButton:hover {
-  background: rgba(255, 254, 254, 0.3);
-}
-
-#locationText {
-  top: 340px;
-}
-
-.textInput {
-  position: absolute;
-  width: 500px;
-  font-family: 'Roboto Slab', serif !important;
-  left: 350px;
-  top: 400px;
-}
-
-.formField {
   color: white !important;
-  border: 0 !important;
-  outline: 0 !important;
-  border-bottom: 2px solid white !important;
-  background: transparent !important;
-}
-
-.formField::selection, .formField:hover {
-  outline: none !important;
-}
-
-::placeholder {
-  color: white !important;
-  opacity: 0.5 !important;
-}
-
-#searchButton {
-  left: 510px;
-  top: 480px;
-  background: rgba(255, 254, 254, 0.2);
-  border-color: white;
-}
-
-#searchButton:hover {
-  background: rgba(255, 254, 254, 0.3);
+  font-size: small !important;
+  display: inline;
 }

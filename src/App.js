@@ -1,25 +1,48 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import SunlocLogo from './components/SunlocLogo/SunlocLogo';
-import Button from 'react-bootstrap/Button'
-import Form from 'react-bootstrap/Form'
+import Home from './components/Home/Home';
+import Suggest from './components/Suggest/Suggest';
+import Results from './components/Results/Results';
+import Row from 'react-bootstrap/Row'
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
 
 
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<SunlocLogo> </SunlocLogo>
-				<p className="bodyText">what do you want to experience today?</p>
-				<Button className="selectionButton" id="sunriseButton">sunrise</Button>
-				<Button className="selectionButton" id="sunsetButton">sunset</Button>
-				<p className="bodyText" id="locationText">where are you located?</p>
-				<Form className="textInput">
-					<Form.Control className="formField" placeholder="enter address" />
-				</Form>
-				<Button className="selectionButton" id="searchButton">show me the light</Button>
+			<header className="justify-content-center App-header">
+				<Router>
+					<div>
+						<nav>
+							<Row>
+								<Link to="/" className="pr-1 navigationLink"> home </Link>
+								<p className="navigationLink">/</p>
+								<Link to="/suggestaspot" className="pl-1 pr-1 navigationLink"> suggest a spot </Link>
+								<p className="navigationLink">/</p>
+								<Link to="/results" className="pl-1 navigationLink"> results </Link>
+							</Row>
+						</nav>
+						<Switch>
+							<Route path="/suggestaspot">
+								<Suggest />
+							</Route>
+							<Route path="/results">
+								<Results />
+							</Route>
+							<Route path="/">
+								<Home />
+							</Route>
+						</Switch>
+					</div>
+				</Router>
 			</header>
 		</div>
 	);
