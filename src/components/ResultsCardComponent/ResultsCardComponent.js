@@ -1,9 +1,8 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Card from 'react-bootstrap/Card'
 import polsonpier from '../../images/polsonpier.jpg'
 
-import './ResultsCard.css'
+import './ResultsCardComponent.css'
 
 
 export default function ResultsCard() {

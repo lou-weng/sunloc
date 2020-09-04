@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './SunlocLogo.css'
+import './SunlocLogoComponent.css'
 
 
 export default function TestComponent() {

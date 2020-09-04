@@ -1,11 +1,10 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import SunlocLogo from '../SunlocLogo/SunlocLogo';
-import ResultsCard from '../ResultsCard/ResultsCard';
+import SunlocLogo from '../SunlocLogoComponent/SunlocLogoComponent';
+import ResultsCard from '../ResultsCardComponent/ResultsCardComponent';
 import Container from 'react-bootstrap/Container';
 
 
-import './Results.css'
+import './ResultsComponent.css'
 import { CardDeck } from 'react-bootstrap';
 
 
