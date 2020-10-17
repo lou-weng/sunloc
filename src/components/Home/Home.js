@@ -15,19 +15,19 @@ export default function Home() {
         <Container>
             <SunlocLogo> </SunlocLogo>
             <p className="mb-0 text-left bodyText">what do you want to experience today?</p>
-            <Row>
-                <Button className="m-3 mt-2 selectionButton" id="sunriseButton">sunrise</Button>
-                <Button className="m-3 mt-2 selectionButton" id="sunsetButton">sunset</Button>
-            </Row>
-            <p className="text-left bodyText" id="locationText">where are you located?</p>
-            <Form className="textInput">
+            <Form className="textInput" method="post" action="localhost:3001/">
+                <Row>
+                    <Button className="m-3 mt-2 selectionButton" id="sunriseButton">sunrise</Button>
+                    <Button className="m-3 mt-2 selectionButton" id="sunsetButton">sunset</Button>
+                </Row>
+                <p className="text-left bodyText" id="locationText">where are you located?</p>
                 <Col xs={10}>
-                    <Form.Control className="pl-0 m-0 formField" placeholder="enter address" />
+                    <Form.Control type="text" name="location" className="pl-0 m-0 formField" placeholder="enter address" />
                 </Col>
+                <Row>
+                    <Button type="submit" className="m-3 mt-4 selectionButton" id="searchButton">show me the light</Button>
+                </Row>
             </Form>
-            <Row>
-                <Button className="m-3 mt-4 selectionButton" id="searchButton">show me the light</Button>
-            </Row>
         </Container>
     )
 }
